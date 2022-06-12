@@ -1,0 +1,14 @@
+/target/
+!.mvn/wrapper/maven-wrapper.jar
+/logs/
+/my-app/
+/other/
+/a1_java_base/target/
+/a3_springboot/target/
+/a9_algorithm/target/
+
+### IntelliJ IDEA ###
+.idea/
+*.iws
+*.iml
+*.ipr

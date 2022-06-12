@@ -1,0 +1,18 @@
+server:
+  port: 8080
+  servlet:
+    context-path: /base
+
+spring:
+  profiles:
+    active: mysql
+
+
+logging:
+  level:
+    com.lixin.boot_base: debug
+    com.lixin.boot_base.mapper: debug
+
+
+
+
