@@ -141,9 +141,9 @@ public class BasicCompletableFutureDemo {
         }, executor);
 
         CompletableFuture<Void> taskC = CompletableFuture.runAsync(() -> {
-	        delayRandom(30, 100);
-	        //throw new RuntimeException("task C exception");
-	    }, executor);
+            delayRandom(30, 100);
+            //throw new RuntimeException("task C exception");
+        }, executor);
 
         System.out.println(System.currentTimeMillis());
         CompletableFuture.allOf(taskA, taskB, taskC).whenComplete((result, ex) -> {
@@ -169,12 +169,10 @@ public class BasicCompletableFutureDemo {
         try {
             Integer ret = asyncRet.get();
             System.out.println(ret);
-        } catch (InterruptedException e) {
-	        e.printStackTrace();
-	    } catch (ExecutionException e) {
-	        e.printStackTrace();
-	    }
+        } catch (InterruptedException | ExecutionException e) {
+            e.printStackTrace();
+        }
 
-	}
+    }
 
 }

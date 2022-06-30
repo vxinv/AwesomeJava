@@ -19,3 +19,7 @@ git reset --hard origin/master  //强制更新覆盖本地
 
 # 强制推送
 git push -f origin master
+
+#  更换git托管
+ git remote rm origin
+ git remote add origin git@github.com:vxinv/notes.git

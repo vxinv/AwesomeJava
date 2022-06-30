@@ -5,34 +5,34 @@ import java.io.Serializable;
 import java.util.Date;
 
 public class OrmUser implements Serializable {
-    @ApiModelProperty(value = "涓婚敭")
+    @ApiModelProperty(value = "主键")
     private Integer id;
 
-    @ApiModelProperty(value = "鐢ㄦ埛鍚�")
+    @ApiModelProperty(value = "用户名")
     private String name;
 
-    @ApiModelProperty(value = "鍔犲瘑鍚庣殑瀵嗙爜")
+    @ApiModelProperty(value = "加密后的密码")
     private String password;
 
-    @ApiModelProperty(value = "鍔犲瘑浣跨敤鐨勭洂")
+    @ApiModelProperty(value = "加密使用的盐")
     private String salt;
 
-    @ApiModelProperty(value = "閭")
+    @ApiModelProperty(value = "邮箱")
     private String email;
 
-    @ApiModelProperty(value = "鎵嬫満鍙风爜")
+    @ApiModelProperty(value = "手机号码")
     private String phoneNumber;
 
-    @ApiModelProperty(value = "鐘舵�侊紝-1锛氶�昏緫鍒犻櫎锛�0锛氱鐢紝1锛氬惎鐢�")
+    @ApiModelProperty(value = "状态，-1：逻辑删除，0：禁用，1：启用")
     private Integer status;
 
-    @ApiModelProperty(value = "鍒涘缓鏃堕棿")
+    @ApiModelProperty(value = "创建时间")
     private Date createTime;
 
-    @ApiModelProperty(value = "涓婃鐧诲綍鏃堕棿")
+    @ApiModelProperty(value = "上次登录时间")
     private Date lastLoginTime;
 
-    @ApiModelProperty(value = "涓婃鏇存柊鏃堕棿")
+    @ApiModelProperty(value = "上次更新时间")
     private Date lastUpdateTime;
 
     private static final long serialVersionUID = 1L;

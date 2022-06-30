@@ -1,9 +1,12 @@
 package org.vxinv.algorithm.分治法;
 
+import java.util.Arrays;
+
 /**
  * 二分法 o(log(n))
  */
 public class q34_在排序数组中查找元素的第一个和最后一个位置_01 {
+
 
     public int[] searchRange(int[] nums, int target) {
         if (nums == null || nums.length < 1) {
@@ -55,6 +58,6 @@ public class q34_在排序数组中查找元素的第一个和最后一个位置
     }
 
     public static void main(String[] args) {
-        new q34_在排序数组中查找元素的第一个和最后一个位置_01().searchRange(new int[]{2, 2}, 2);
+        System.out.println(Arrays.toString(new q34_在排序数组中查找元素的第一个和最后一个位置_01().searchRange(new int[]{2, 2}, 2)));
     }
 }
