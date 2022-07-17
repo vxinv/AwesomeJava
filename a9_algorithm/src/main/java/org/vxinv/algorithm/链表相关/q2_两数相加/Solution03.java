@@ -1,6 +1,7 @@
 package org.vxinv.algorithm.链表相关.q2_两数相加;
 
-import org.junit.Test;
+
+import org.junit.jupiter.api.Test;
 
 // 简单题 想的太复杂
 public class Solution03 {

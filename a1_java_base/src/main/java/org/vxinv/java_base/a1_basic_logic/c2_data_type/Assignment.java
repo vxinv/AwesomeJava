@@ -1,11 +1,18 @@
 package org.vxinv.java_base.a1_basic_logic.c2_data_type;
 
+
+
+import org.junit.jupiter.api.Test;
+import org.vxinv.java_base.a6_dynamic_agent.c85_annotation.InheritDemo;
+
 public class Assignment {
 
 	/**
 	 * @param args
 	 */
-	public static void main(String[] args) {
+
+	@Test
+	public  void main(String[] args) {
 		byte b = 23;
 		short s = 3333;
 		int i = 9999;

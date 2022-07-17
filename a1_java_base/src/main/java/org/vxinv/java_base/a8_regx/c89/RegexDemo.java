@@ -1,14 +1,20 @@
 package org.vxinv.java_base.a8_regx.c89;
 
+
+
+import org.junit.jupiter.api.Test;
+
 import java.util.Arrays;
 import java.util.HashMap;
 import java.util.Map;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
+
 public class RegexDemo {
 
-	public static void split1(){
+	@Test
+	public  void split1(){
 		String str = "abc,def,hello";
 		String[] fields = str.split(",");
 		System.out.println("field num: "+fields.length);
@@ -116,8 +122,5 @@ public class RegexDemo {
 	    System.out.println(templateEngine(template, params));
 	}
 
-	public static void main(String[] args) {
-		templateDemo();
-	}
 
 }

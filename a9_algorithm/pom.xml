@@ -16,40 +16,18 @@
         <version.jackson.annotations>${version.jackson}</version.jackson.annotations>
         <!--org.junit.platform-->
         <version.junit.platform.launcher>1.2.0</version.junit.platform.launcher>
-        <version.junit.jupiter.engine>5.2.0</version.junit.jupiter.engine>
-        <version.junit.vintage.engine>5.2.0</version.junit.vintage.engine>
-        <version.junit.vintage.api>5.5.0</version.junit.vintage.api>
+        <version.junit.jupiter>5.8.0</version.junit.jupiter>
         <version.logback>1.2.3</version.logback>
     </properties>
 
 
     <dependencies>
-        <dependency>
-            <groupId>junit</groupId>
-            <artifactId>junit</artifactId>
-            <version>4.13</version>
-            <scope>test</scope>
-        </dependency>
 
         <dependency>
-            <groupId>org.junit.platform</groupId>
-            <artifactId>junit-platform-launcher</artifactId>
-            <version>${version.junit.platform.launcher}</version>
-        </dependency>
-        <dependency>
             <groupId>org.junit.jupiter</groupId>
-            <artifactId>junit-jupiter-engine</artifactId>
-            <version>${version.junit.jupiter.engine}</version>
-        </dependency>
-        <dependency>
-            <groupId>org.junit.vintage</groupId>
-            <artifactId>junit-vintage-engine</artifactId>
-            <version>${version.junit.vintage.engine}</version>
-        </dependency>
-        <dependency>
-            <groupId>org.junit.jupiter</groupId>
-            <artifactId>junit-jupiter-api</artifactId>
-            <version>5.5.0</version>
+            <artifactId>junit-jupiter</artifactId>
+            <version>${version.junit.jupiter}</version>
+            <scope>compile</scope>
         </dependency>
 
         <dependency>
@@ -68,12 +46,7 @@
             <artifactId>jackson-annotations</artifactId>
             <version>2.11.2</version>
         </dependency>
-        <dependency>
-            <groupId>junit</groupId>
-            <artifactId>junit</artifactId>
-            <version>4.13</version>
-            <scope>compile</scope>
-        </dependency>
+
     </dependencies>
 
     <build>

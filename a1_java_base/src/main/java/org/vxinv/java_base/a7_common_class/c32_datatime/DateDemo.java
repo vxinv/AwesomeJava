@@ -1,5 +1,8 @@
 package org.vxinv.java_base.a7_common_class.c32_datatime;
 
+
+import org.junit.jupiter.api.Test;
+
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.Calendar;
@@ -8,7 +11,8 @@ import java.util.Date;
 // 7.5 剖析日期和时间
 public class DateDemo {
 
-	public static void basic(){
+	@Test
+	public void basic(){
 		Calendar calendar = Calendar.getInstance();
 		System.out.println("year: "+calendar.get(Calendar.YEAR));
 		System.out.println("month: "+calendar.get(Calendar.MONTH));
@@ -40,12 +44,6 @@ public class DateDemo {
 		}
 	}
 
-	/**
-	 * @param args
-	 */
-	public static void main(String[] args) {
-		// TODO Auto-generated method stub
 
-	}
 
 }

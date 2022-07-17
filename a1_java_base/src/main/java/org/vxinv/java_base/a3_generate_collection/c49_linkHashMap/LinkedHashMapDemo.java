@@ -1,5 +1,7 @@
 package org.vxinv.java_base.a3_generate_collection.c49_linkHashMap;
 
+
+
 import org.junit.jupiter.api.Test;
 
 import java.util.LinkedHashMap;

@@ -11,6 +11,7 @@ public class CounterThread extends Thread {
 	}
 
 
+
     public static void main(String[] args) throws InterruptedException {
         int num = 1000;
         Thread[] threads = new Thread[num];

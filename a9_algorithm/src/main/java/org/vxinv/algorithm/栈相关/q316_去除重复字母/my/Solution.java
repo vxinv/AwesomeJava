@@ -1,6 +1,7 @@
 package org.vxinv.algorithm.栈相关.q316_去除重复字母.my;
 
-import org.junit.Test;
+
+import org.junit.jupiter.api.Test;
 
 import java.util.Stack;
 

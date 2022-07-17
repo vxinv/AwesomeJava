@@ -1,6 +1,6 @@
 package org.vxinv.algorithm.链表相关.q19_删除链表的倒数第N个节点.my1;
 
-import org.junit.Test;
+import org.junit.jupiter.api.Test;
 import org.vxinv.algorithm.链表相关.util.ListNode;
 import org.vxinv.algorithm.链表相关.util.ListUtil;
 
