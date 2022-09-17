@@ -1,0 +1,19 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="q3_无重复字符的最长子串_01.test01" type="JUnit" factoryName="JUnit" nameIsGenerated="true">
+    <module name="a9_algorithm" />
+    <extension name="coverage">
+      <pattern>
+        <option name="PATTERN" value="org.vxinv.algorithm.双指针遍历.*" />
+        <option name="ENABLED" value="true" />
+      </pattern>
+    </extension>
+    <option name="PACKAGE_NAME" value="org.vxinv.algorithm.双指针遍历" />
+    <option name="MAIN_CLASS_NAME" value="org.vxinv.algorithm.双指针遍历.q3_无重复字符的最长子串_01" />
+    <option name="METHOD_NAME" value="test01" />
+    <option name="TEST_OBJECT" value="method" />
+    <option name="VM_PARAMETERS" />
+    <method v="2">
+      <option name="Make" enabled="true" />
+    </method>
+  </configuration>
+</component>

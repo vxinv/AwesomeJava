@@ -1,5 +1,10 @@
 package org.vxinv.algorithm.排序算法;
 
+
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+import sun.rmi.runtime.Log;
+
 import java.util.Arrays;
 
 /**
@@ -14,8 +19,11 @@ import java.util.Arrays;
  */
 public class QuickSort {
 
+
+    static Logger log = LoggerFactory.getLogger(QuickSort.class);
+
     public static void main(String[] args) {
-        int[] arr = {3, 34, 45, 14, 115, 1, 5, 17, 71, 63, 23, 44, 4, 56, 9, 16, 5, 3};
+        int[] arr = {3, 34, 45, 14, 115, 17, 71, 63, 23, 44, 4, 56, 9, 16, 5,34,23};
         quickSort(arr, 0, arr.length - 1);
         System.out.println(Arrays.toString(arr));
 
@@ -32,17 +40,22 @@ public class QuickSort {
         int i = L;
         int j = R;
         //支点
-        int pivot = arr[(L + R) / 2];
+        System.out.printf("从 %d 到 %d 继续开始 %n",arr[i],arr[j]);
+        int pivot = arr[(L+R)/2];
+        System.out.printf("基数是 %d %n",pivot);
         //左右两端进行扫描，只要两端还没有交替，就一直扫描
         while (i <= j) {
             //寻找直到比支点大的数
-            while (pivot > arr[i])
+            while (pivot > arr[i]){
                 i++;
+            }
             //寻找直到比支点小的数
-            while (pivot < arr[j])
+            while (pivot < arr[j]){
                 j--;
+            }
             //此时已经分别找到了比支点小的数(右边)、比支点大的数(左边)，它们进行交换
             if (i <= j) {
+                System.out.printf("交换 i: %d ,j: %d,值是 [i]: %d , [j]: %d  %n",i,j,arr[i],arr[j]);
                 int temp = arr[i];
                 arr[i] = arr[j];
                 arr[j] = temp;
@@ -50,7 +63,7 @@ public class QuickSort {
                 j--;
             }
         }
-        //上面一个while保证了第一趟排序支点的左边比支点小，支点的右边比支点大了。
+        //上面一个while保证了第一趟排序支点的左边比支点小，支点的右边比支点大。
         //“左边”再做排序，直到左边剩下一个数(递归出口)
         if (L < j)
             quickSort(arr, L, j);

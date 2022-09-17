@@ -26,8 +26,9 @@ public class BasicLambda {
 		System.out.println(f.getAbsolutePath());
 		File[] files = f.listFiles((dir, name) -> name.endsWith(".java"));
 
-		Arrays.sort(files, Comparator.comparing(File::getName));
-
+		if (files != null) {
+			Arrays.sort(files, Comparator.comparing(File::getName));
+		}
 		ExecutorService executor = Executors.newFixedThreadPool(100);
 		executor.submit(()->System.out.println("hello"));
 

@@ -6,12 +6,8 @@ import org.junit.jupiter.api.Test;
 
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
-import java.util.Collections;
-import java.util.Comparator;
-import java.util.Map;
+import java.util.*;
 import java.util.Map.Entry;
-import java.util.NavigableMap;
-import java.util.TreeMap;
 
 public class TreeMapDemo {
 
@@ -30,12 +26,7 @@ public class TreeMapDemo {
 
     @Test
     public void comparator() {
-        Map<String, String> map = new TreeMap<>(new Comparator<String>() {
-            @Override
-            public int compare(String o1, String o2) {
-                return o2.compareTo(o1);
-            }
-        });
+        Map<String, String> map = new TreeMap<>((o1, o2) -> o2.compareTo(o1));
 
         map.put("a", "abstract");
         map.put("c", "call");
@@ -70,6 +61,8 @@ public class TreeMapDemo {
         for (Entry<String, Integer> kv : map.entrySet()) {
             System.out.println(kv.getKey() + "," + kv.getValue());
         }
+
+
 
     }
 

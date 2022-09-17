@@ -1,5 +1,7 @@
 package org.vxinv.java_base.a5_juc.c68;
 
+import java.io.Console;
+
 public class MasterWorkerDemo {
 
 	static class Worker extends Thread {
@@ -16,7 +18,8 @@ public class MasterWorkerDemo {
 				Thread.sleep((int) (Math.random() * 1000));
 
 				this.latch.countDown();
-			} catch (InterruptedException e) {
+			} catch (InterruptedException ignore) {
+
 			}
 		}
 	}
@@ -30,7 +33,6 @@ public class MasterWorkerDemo {
 			workers[i].start();
 		}
 		latch.await();
-
 		System.out.println("collect worker results");
 	}
 
