@@ -139,6 +139,7 @@
         </set>
         where id = #{id,jdbcType=INTEGER}
     </update>
+
     <update id="updateByPrimaryKey" parameterType="com.lixin.boot.common.TUser">
         update t_user
         set username = #{username,jdbcType=VARCHAR},

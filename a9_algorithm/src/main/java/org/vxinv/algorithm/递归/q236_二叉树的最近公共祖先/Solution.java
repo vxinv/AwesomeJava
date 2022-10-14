@@ -1,5 +1,8 @@
 package org.vxinv.algorithm.递归.q236_二叉树的最近公共祖先;
 
+import com.sun.deploy.panel.TreeBuilder;
+import org.junit.jupiter.api.Test;
+
 /**
  * LCA二叉树的最近公共祖先（递归）o(n)
  */
@@ -19,5 +22,11 @@ class Solution {
         }
         //左右子树上均能找到，说明此时的p结点和q结点分居root结点两侧，此时就应当直接返回root结点
         return root;
+    }
+
+    @Test
+    public void test1(){
+
+
     }
 }
