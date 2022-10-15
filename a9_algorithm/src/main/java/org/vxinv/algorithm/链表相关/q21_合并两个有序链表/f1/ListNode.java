@@ -1,5 +1,4 @@
-package org.vxinv.algorithm.链表相关.q25_k个一组翻转链表;
-
+package org.vxinv.algorithm.链表相关.q21_合并两个有序链表.f1;
 
 public class ListNode {
     int val;
@@ -9,4 +8,3 @@ public class ListNode {
         val = x;
     }
 }
-

@@ -1,4 +1,4 @@
-package org.vxinv.algorithm.链表相关.q206_反转链表.f1;
+package org.vxinv.algorithm.链表相关.q206_反转链表;
 
 
 import org.vxinv.algorithm.链表相关.util.ListNode;

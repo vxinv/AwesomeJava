@@ -1,4 +1,4 @@
-package org.vxinv.algorithm.递归.q21_合并两个有序链表.f2;
+package org.vxinv.algorithm.链表相关.q21_合并两个有序链表.f2;
 
 /**
  * 递归（看成两个链表头部较小的一个与剩下元素的 merge 操作结果合并） o(n)

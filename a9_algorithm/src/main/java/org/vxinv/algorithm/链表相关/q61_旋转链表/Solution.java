@@ -1,5 +1,7 @@
 package org.vxinv.algorithm.链表相关.q61_旋转链表;
 
+import org.vxinv.algorithm.链表相关.util.ListNode;
+
 /**
  * 先连接成环再找断点 o(n)
  */

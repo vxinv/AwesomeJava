@@ -1,4 +1,4 @@
-package org.vxinv.algorithm.递归.q21_合并两个有序链表.f1;
+package org.vxinv.algorithm.链表相关.q21_合并两个有序链表.f1;
 
 /**
  * 插队法 - 遍历迭代 o(n)
