@@ -14,25 +14,27 @@ public class Solution01 {
         // 如果前一步＞10 为1或0
         int lastStep = 0;
         // 两个链表
-        while (tl1 != null || tl2 != null || lastStep != 0){
+        while (tl1 != null || tl2 != null || lastStep != 0) {
             int a = 0;
             int b = 0;
-            if (tl1 != null){
+            if (tl1 != null) {
                 a = tl1.val;
                 tl1 = tl1.next;
             }
-            if (tl2 != null){
+            if (tl2 != null) {
                 b = tl2.val;
                 tl2 = tl2.next;
             }
             int c = a + b + lastStep;
             lastStep = 0;
             ListNode node = new ListNode(c % 10);
-            if ( c > 10) { lastStep = 1; }
-            if (tmpNode == null){
+            if (c > 10) {
+                lastStep = 1;
+            }
+            if (tmpNode == null) {
                 tmpNode = node;
                 head.next = tmpNode;
-            }else {
+            } else {
                 tmpNode.next = node;
                 tmpNode = node;
             }
@@ -41,11 +43,11 @@ public class Solution01 {
     }
 
     @Test
-    public void test01(){
+    public void test01() {
         ListNode listNode1 = ListUtil.buildList(1, 4, 9, 8, 5);
         ListNode listNode2 = ListUtil.buildList(4, 3, 5, 3, 6);
         ListNode listNode = addTwoNumbers(listNode1, listNode2);
-        while (listNode != null){
+        while (listNode != null) {
             System.out.println(listNode.val);
             listNode = listNode.next;
         }
