@@ -2,6 +2,7 @@ package org.vxinv.algorithm.递归.q236_二叉树的最近公共祖先;
 
 import com.sun.deploy.panel.TreeBuilder;
 import org.junit.jupiter.api.Test;
+import org.vxinv.algorithm.树相关.util.TreeNode;
 
 /**
  * LCA二叉树的最近公共祖先（递归）o(n)
